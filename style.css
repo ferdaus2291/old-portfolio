@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.logo > h2 {
+  color: white;
+  margin-left: 40px;
+}
+.Logofirstletter {
+  color: red;
+  font-size: 30px;
+}
+#navigation {
+  background-image: linear-gradient(dodgerblue, rgb(2, 43, 85));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navigation > ul {
+  display: flex;
+  margin: 5px;
+}
+#navigation > ul > li {
+  list-style-type: none;
+  margin: 0px 5px;
+  padding: 15px 0px;
+  margin-left: -5px;
+}
+#navigation > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-right: 1px solid white;
+  transition: 0.5s;
+}
+#navigation > ul > li:first-child > a {
+  border-left: 1px solid white;
+}
+#navigation > ul > li:hover > a {
+  background-color: rgb(5, 2, 139);
+}
+.DropdownMenu {
+  opacity: 0;
+  visibility: hidden;
+  background-color: dodgerblue;
+  text-align: center;
+  margin-top: 15px;
+  width: 190px;
+  position: absolute;
+  transition: 1s;
+  box-shadow: 10px 10px 8px dodgerblue;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+.DropdownMenu > li {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0px;
+  list-style-type: none;
+  border-bottom: 1px solid white;
+}
+.DropdownMenu > li:hover {
+  background-color: brown;
+}
+.DropdownMenu > li:first-child {
+  border-top: 1px solid white;
+}
+.DropdownMenu > li > a {
+  text-decoration: none;
+}
+
+#navigation > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+/* main area start here */
+#main-header {
+  text-align: center;
+  background-image: url(./image/photo-23.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.header-cointainer {
+  padding: 100px;
+}
+.header-cointainer > h1 {
+  width: 500px;
+  font-size: 40px;
+  padding: 15px 20px;
+  margin: 20px auto;
+  color: white;
+  background-color: rgba(216, 112, 147, 0.468);
+  border-radius: 10px;
+}
+.header-cointainer > button {
+  font-size: 24px;
+  padding: 15px 20px;
+  margin-top: 15px;
+  background-color: pink;
+  border-radius: 10px;
+  border: 5px solid rgba(216, 112, 147, 0.741);
+  cursor: pointer;
+  transition: 1s;
+}
+.header-cointainer > button:hover {
+  background-color: rgba(255, 218, 185, 0.063);
+}
+.header-cointainer > h3 {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.485);
+}
+.header-cointainer > h5 {
+  color: rgba(0, 0, 0, 0.554);
+  font-size: 25px;
+  margin-top: 10px;
+}
+.fonticon {
+  font-size: 30px;
+  color: white;
+}
+.font > a > i {
+  color: rgb(2, 50, 2);
+  font-size: 25px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 10px 5px;
+  transition: 2s;
+}
+.font > a > i:hover {
+  color: dodgerblue;
+  border: 2px solid rgba(16, 0, 0, 0.329);
+  transform: rotate(360deg);
+}
+/* first-section start here */
+.first-container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 100px 0px;
+}
+/* .programming {
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+  padding: 20px 10px;
+}
+.programming > h2 {
+  margin: 15px 15px;
+}
+.programming > i {
+  font-size: 50px;
+}
+.programming:hover {
+  box-shadow: 3px 3px 10px;
+  transition: 2s;
+}
+.developer {
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+}
+.developer > h2 {
+  margin: 15px 15px;
+}
+.developer > I {
+  font-size: 50px;
+}
+.developer:hover {
+  box-shadow: 3px 3px 10px;
+  transition: 2s;
+} */
+.freelancing {
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+}
+.freelancing:hover {
+  box-shadow: 3px 4px 3px rgb(178, 178, 178);
+  transition: 2s;
+}
+.freelancing > h2 {
+  margin: 15px 15px;
+}
+.freelancing > i {
+  font-size: 50px;
+}
+/* second section code start here */
+.smartarea-title > h2 {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+.smartarea-title > h2::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 5px;
+  background-color: red;
+  top: 30px;
+  left: 571px;
+}
+.smart-area {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+.smart-area-text {
+  width: 500px;
+}
+.smart-area-text > h2 {
+  margin: 2px 0;
+}
+.smart-area-text > h4 {
+  color: red;
+}
+.smart-area-text > a {
+  text-decoration: none;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: 25px;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.smart-area-text > a:hover {
+  background-color: rgba(165, 42, 42, 0.749);
+  transition: 5s;
+}
+
+/* Third section here  */
+
+#third-section {
+  background-color: #d4cdc3;
+}
+.service_area_title {
+  text-align: center;
+  padding: 40px 0;
+}
+.service_area_title > h2 {
+  font-size: 45px;
+}
+
+.each-services-icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 60px;
+}
+.services-area {
+  width: 1000px;
+  margin: auto;
+}
+.services-first {
+  background-color: lightblue;
+  text-align: center;
+  padding: 30px 0px;
+}
+.services-first > i {
+  font-size: 40px;
+  color: rebeccapurple;
+}
+.services-first:hover {
+  background-color: rgba(173, 216, 230, 0.673);
+  transition: 0.6s;
+}
+.services-first > h3 {
+  margin: 15px 0;
+}
+
+/* fourth section start here */
+
+#fourth-section {
+  background-color: rgba(87, 34, 34, 0.334);
+}
+
+.pricing-area-container {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.pricing-area-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-title {
+  text-align: center;
+  font-size: 35px;
+  padding: 40px 0;
+}
+.single-card-img {
+  width: 310px;
+}
+.single-card-img > img {
+  max-width: 100%;
+}
+.single-card {
+  width: 310px;
+  text-align: center;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.single-card > h2 {
+  padding: 10px;
+  font-size: 20px;
+}
+.month-pricing {
+  border-top: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+  padding: 15px 0;
+  margin: 15px 20px;
+}
+.month-pricing > .month-pricing-span1 {
+  font-size: 25px;
+}
+.month-pricing > .month-pricing-span2 {
+  color: gray;
+}
+.single-card > button {
+  background-color: rgba(30, 143, 255, 0.693);
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.single-card > button:hover {
+  background-color: #d4cdc3;
+  transition: 0.6s;
+}
+.single-card > a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* fifth section here */
+/* 
+.testo-container {
+  width: 100px;
+  margin: auto;
+}
+
+.testimonials-title {
+  text-align: center;
+  padding: 50px 0;
+}
+.testimonials-title h2 {
+  font-size: 25px;
+}
+.testimonials-title h4 {
+  color: gray;
+  letter-spacing: 0.2em;
+}
+.testo-singlecard-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+.singlecard-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.singlecard-parent {
+  display: flex;
+  align-items: center;
+}
+.testo-image-div {
+  width: 200px;
+  border-radius: 50%;
+}
+.testo-image-div img {
+  max-width: 100px;
+  border-radius: 50%;
+  border: 1px solid red;
+} */
+
+/* Six-section here  */
+.Contact-container {
+  width: 300px;
+  margin: auto;
+}
+.Contact-title {
+  text-align: center;
+  padding: 50px 0;
+}
+.Contact-title h2 {
+  font-size: 25px;
+}
+.Contact-title h4 {
+  color: gray;
+  letter-spacing: 0.3em;
+}
